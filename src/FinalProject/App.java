@@ -31,8 +31,8 @@ public class App {
 		Deck  deck = new Deck();
 		deck.shuffle();
 		
-		//System.out.println(deck);
-		System.out.println();
+		System.out.println(deck);
+		
 		
 		deal(deck, player1, player2);
 		
