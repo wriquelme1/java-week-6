@@ -1,6 +1,7 @@
 package FinalProject;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /*c. Player
@@ -17,8 +18,8 @@ import java.util.List;
 public class Player {
 	
 	private String name;
-	private  List<Card> hand = new ArrayList<Card>();
-	private int score;
+	private  List<Card> hand = new LinkedList<Card>();
+	private int score=0;
 	
 	public Player(String name) {
 	    this.name = name;
@@ -49,8 +50,8 @@ public class Player {
 		return hand.remove(0);
 	}
 
-	public void plusOne() {
-		score += getScore() +1;
+	public void incrementScore() {
+		score += getScore() + 1;
 		
 	}
 

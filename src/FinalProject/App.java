@@ -31,7 +31,8 @@ public class App {
 		Deck  deck = new Deck();
 		deck.shuffle();
 		
-		System.out.println(deck);
+		//System.out.println(deck);
+		System.out.println();
 		
 		deal(deck, player1, player2);
 		
@@ -80,9 +81,9 @@ public class App {
 			Card card1 = player1.flip();
 			Card card2 = player2.flip();
 			if(card1.getRank()> card2.getRank()) {
-				player1.plusOne();
+				player1.incrementScore();
 			}else if(card2.getRank()> card1.getRank()) {
-				player2.plusOne();
+				player2.incrementScore();
 			}
 			
 		}

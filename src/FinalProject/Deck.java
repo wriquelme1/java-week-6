@@ -23,7 +23,7 @@ public class Deck extends LinkedList<Card> {
 	
 	public Deck() {
 		for (int i= 0; i < cardNames.size(); i ++ ) {
-			int rank = i + 1;
+			int rank = i + 2;
 			String cName = cardNames.get(i);
 			for(String domain : domains) {
 				add(new Card(cName, domain, rank));
